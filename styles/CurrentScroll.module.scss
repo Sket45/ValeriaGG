@@ -1,0 +1,84 @@
+.Container {
+    grid-area: second;
+
+
+    &_Wrapper {
+        display: none;
+        grid-template-columns: repeat(auto-fill, minmax(600px, 50px));
+        grid-column-gap: 30px;
+     
+
+
+      
+
+        > div {
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            min-width: 49.9%;
+            
+            > div {
+
+            cursor: pointer;
+            min-width: 600px;
+            min-height: 550px;
+            border: 1px solid black;
+            text-align: center;
+            }
+
+            > h1 {
+                text-align: center;
+                padding: 40px;
+           
+            }
+
+        }
+
+        > a {
+            grid-column-start: 2;
+            grid-column-end: 2;
+            width: 2px;
+            height: 80vh;
+            transform: translateY(10vh);
+            background-color: black;
+        }
+        
+
+        div:nth-child(even)::before {
+
+            position: absolute;
+            content: '';;
+            height: 75%;
+            width: 2px;
+            transform: translateX(-21.05vw);
+            background-color: #A57676;
+        
+    }
+
+    }
+    
+
+
+
+
+}
+
+
+.Left {
+
+
+
+     div::after {
+        position: absolute;
+        content: '';;
+        height: 77%;
+        width: 2px;
+        transform: translateX(20vw);
+        background-color: #A57676;
+   
+    }
+}
+

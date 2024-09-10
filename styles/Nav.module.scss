@@ -1,0 +1,62 @@
+@import url(https://db.onlinewebfonts.com/c/a0fc537ed7864b9a1f6596090483a116?family=Sol+W01+Medium);
+
+.Main {
+  grid-area: second;
+
+  &_Wrapper {
+    font-family: var(--font-paper-sign);
+
+    display: flex;
+    white-space: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    height: 100%;
+
+    .Name {
+      height: 200px;
+      > h1 {
+        cursor: pointer;
+        font-size: 10em;
+        margin: 0;
+
+        font-weight: 500;
+      }
+    }
+
+    .Nav {
+      font-family: "Papyrus";
+      font-size: 2rem;
+
+      display: flex;
+      flex-direction: column;
+
+      > div {
+        width: 121px;
+        height: 50px;
+      }
+
+      .current,
+      .cv,
+      .contact {
+        position: absolute;
+        transition: all 0.25s ease-in-out;
+        width: 121px;
+      }
+
+      .current:hover,
+      .cv:hover,
+      .contact:hover {
+        cursor: pointer;
+        padding-left: 75px;
+        transition: all 0.25s ease-in-out;
+      }
+    }
+  }
+}
+
+.Front_Image {
+  grid-area: third;
+
+  background-color: silver;
+}

@@ -1,0 +1,17 @@
+{
+  "Slow Bull": {
+    "name": "Slow Bull",
+    "type": "Oil on canvas",
+    "size": [70, 80],
+    "year": "2023",
+    "place": "Barcelona"
+  },
+
+  "Colors and Pigments": {
+    "name": "Colors and Pigments",
+    "type": "Oil on canvas",
+    "size": [70, 90],
+    "year": "2023",
+    "place": "Barcelona"
+  }
+}
